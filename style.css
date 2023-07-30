@@ -1,0 +1,136 @@
+/* From google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Ubuntu&display=swap');
+*{
+    margin: 1px 1px;
+    padding: 0px 0px;
+}
+body{
+    background-color: bisque;
+}
+/* Font change */
+nav {
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* Making the display flex to make all the elements of navbar to come in one horizontal line */
+.navbar ul {
+    display: flex;
+     list-style-type: none;
+     background-color: blue;
+     height: 50px;
+     align-items: center;
+}
+.navgif{
+    /* Our navbar ul is a flex container and therefore by doing margin-left:auto
+    our gif is shifted towards extreme right and all the space to the left is used */
+    margin-left: auto;
+    height: 50px;
+}
+.navbar ul li a{
+    text-decoration: dashed;
+color: blanchedalmond ;
+}
+.navbar ul li{
+    padding: 0px 4px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+   color: antiquewhite;
+   font-weight: bolder;
+   font-size: 1.1rem ;
+}
+.logo img{
+    width: 38px;
+    padding: 0px 4px;
+}
+.container{
+    min-height: 72vh;
+    color: white;
+    background-color: black;
+    /* text-align: center; */
+    top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin: 10px auto;
+    /* justify-content: center; */
+    width: 79%;
+    border-radius: 10px;
+    background-image: url('bg1.jpg');
+    background-size: cover;
+}
+.bottom{
+    color: white;
+    background-color: black;
+    height:60px;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+}
+#progressBar{
+    width: 80vw;
+    height: 10px;
+    
+}
+.icons i{
+    margin: 15px;
+   margin-right: 20px;
+   margin-bottom: 5px;
+   cursor: pointer;
+}
+.songItem img{
+    width: 30px;
+   
+    border-radius: 20px;
+}
+.songItem{
+    height: 30px;
+    display: flex;
+    background-color: white;
+    color: black;
+   margin-top: 5px;
+   /* width: 200px; */
+   justify-content: space-between;
+   align-items: center ;
+  border-radius: 20px;
+  padding-right: 5px;
+  width:15rem;
+  font-size: 10px;
+}
+
+.timestamp{
+    margin: 0px 20px;
+    margin-right: 30px;
+}
+.songlistplay i{
+    cursor: pointer;
+}
+.songcontainer{
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.heading{
+    margin-top: 10px;
+    margin-left: 5px ;
+   
+}
+.heading:hover{
+    
+    color: rgb(47, 255, 0);
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 10ms ease-in;
+    height: 12px;
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    font-size: 10px;
+}
